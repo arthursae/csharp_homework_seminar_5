@@ -1,7 +1,7 @@
 ﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-const int min = 100, max = 1000; // three digits number range
+const int min = 100, max = 999; // three digits number range
 
 void OutputTheCounter(int[] numbersArray, int counter)
 {
@@ -45,7 +45,7 @@ int[] BuildArrayOfPRGNs(int numOfElements)
     for (int i = 0; i < numOfElements; i++)
     {
 
-        int prgn = new Random().Next(min, max);
+        int prgn = new Random().Next(min, max + 1);
         numbers[i] = prgn;
 
     }
