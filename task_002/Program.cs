@@ -2,7 +2,7 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-const int min = -100, max = 100;
+const int min = -100, max = 100; // Set MIN and MAX range for PRG-number
 
 void OutputTheResultOfCalculation(int[] numbersArray, int sum)
 {
