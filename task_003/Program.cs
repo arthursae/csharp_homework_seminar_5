@@ -45,6 +45,7 @@ void OutputTheResultOfSubtraction(double[] numbersArray, int roundTo)
 
     Console.WriteLine("[{0}]", string.Join(", ", numbersArrayRounded));
     Console.WriteLine("Разница между максимальным " + Math.Round(max, roundTo) + " и минимальным " + Math.Round(min, roundTo) + " равна = " + diffRounded);
+    Console.WriteLine(); // removes percent sign from console output
 
 }
 

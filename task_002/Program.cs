@@ -7,9 +7,10 @@ const int min = -100, max = 100;
 void OutputTheResultOfCalculation(int[] numbersArray, int sum)
 {
 
-    Console.Write("Cумма элементов, стоящих на нечётных позициях в массиве: ");
+    Console.Write("Cумма элементов, стоящих на нечётных позициях в массиве ");
     Console.WriteLine("[{0}]", string.Join(", ", numbersArray));
     Console.Write(" -> " + sum);
+    Console.WriteLine(); // removes percent sign from console output
 
 }
 
@@ -25,14 +26,6 @@ int CalculateSumOfAllNumbersInOddIndices(int[] numbers)
     }
 
     return sum;
-
-}
-
-int GetPseudoRandomlyGeneratedNumber(int min, int max)
-{
-
-    int prgn = new Random().Next(min, max);
-    return prgn;
 
 }
 
@@ -53,7 +46,7 @@ int[] BuildArrayOfPRGNs(int numOfElements)
     for (int i = 0; i < numOfElements; i++)
     {
 
-        int prgn = GetPseudoRandomlyGeneratedNumber(min, max);
+        int prgn = new Random().Next(min, max);
         numbers[i] = prgn;
 
     }

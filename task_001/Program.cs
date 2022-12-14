@@ -1,12 +1,15 @@
 ﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
+const int min = 100, max = 1000;
+
 void OutputTheCounter(int[] numbersArray, int counter)
 {
 
-    Console.Write("Количество чётных чисел в массиве: ");
+    Console.Write("Количество чётных чисел в массиве ");
     Console.WriteLine("[{0}]", string.Join(", ", numbersArray));
     Console.Write(" -> " + counter);
+    Console.WriteLine(); // removes percent sign from console output
 
 }
 
@@ -22,14 +25,6 @@ int CountNumberOfEvenNumbersInArray(int[] numbers)
     }
 
     return counter;
-
-}
-
-int GetPseudoRandomlyGeneratedNumber(int min, int max)
-{
-
-    int prgn = new Random().Next(min, max);
-    return prgn;
 
 }
 
@@ -50,7 +45,7 @@ int[] BuildArrayOfPRGNs(int numOfElements)
     for (int i = 0; i < numOfElements; i++)
     {
 
-        int prgn = GetPseudoRandomlyGeneratedNumber(100, 1000);
+        int prgn = new Random().Next(min, max);
         numbers[i] = prgn;
 
     }
