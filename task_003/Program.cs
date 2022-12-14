@@ -28,9 +28,7 @@ void OutputTheResultOfSubtraction(double[] numbersArray, int roundTo)
             max = numbersArray[i];
 
         }
-
-
-
+    
     }
 
     double diff = max - min;
