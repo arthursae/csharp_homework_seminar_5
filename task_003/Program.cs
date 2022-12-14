@@ -85,15 +85,7 @@ bool IsValidNumber(string strToCheck)
 {
 
     int x = 0;
-
-    if (Int32.TryParse(strToCheck, out x))
-    {
-
-        return true;
-
-    }
-
-    return false;
+    return Int32.TryParse(strToCheck, out x);
 
 }
 
