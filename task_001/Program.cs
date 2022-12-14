@@ -9,7 +9,7 @@ void OutputTheCounter(int[] numbersArray, int counter)
     Console.Write("Количество чётных чисел в массиве ");
     Console.WriteLine("[{0}]", string.Join(", ", numbersArray));
     Console.Write(" -> " + counter);
-    Console.WriteLine(); // removes percent sign from console output
+    Console.WriteLine(); // removes the percent sign from your terminal output
 
 }
 

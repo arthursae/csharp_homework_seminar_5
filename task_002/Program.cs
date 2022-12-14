@@ -10,7 +10,7 @@ void OutputTheResultOfCalculation(int[] numbersArray, int sum)
     Console.Write("Cумма элементов, стоящих на нечётных позициях в массиве ");
     Console.WriteLine("[{0}]", string.Join(", ", numbersArray));
     Console.Write(" -> " + sum);
-    Console.WriteLine(); // removes percent sign from console output
+    Console.WriteLine(); // removes the percent sign from your terminal output
 
 }
 

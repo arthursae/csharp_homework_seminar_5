@@ -1,9 +1,9 @@
 ﻿// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-const double min = -100.0; // Set the MIN range of real (double) PRG-numbers
-const double max = 100.0; // Set the MAX range of real (double) PRG-numbers
-const int roundTo = 4; // Set number of fractional digits for better to read output
+const double min = -100.0;  // Set the MIN range of real (double) PRG-numbers
+const double max = 100.0;   // Set the MAX range of real (double) PRG-numbers
+const int roundTo = 4;      // Set number of fractional digits for better to read output
 
 void OutputTheResultOfSubtraction(double[] numbersArray, int roundTo)
 {
@@ -28,7 +28,7 @@ void OutputTheResultOfSubtraction(double[] numbersArray, int roundTo)
             max = numbersArray[i];
 
         }
-    
+
     }
 
     double diff = max - min;
@@ -43,7 +43,7 @@ void OutputTheResultOfSubtraction(double[] numbersArray, int roundTo)
 
     Console.WriteLine("[{0}]", string.Join(", ", numbersArrayRounded));
     Console.WriteLine("Разница между максимальным " + Math.Round(max, roundTo) + " и минимальным " + Math.Round(min, roundTo) + " равна = " + diffRounded);
-    Console.WriteLine(); // removes percent sign from console output
+    Console.WriteLine(); // removes the percent sign from your terminal output
 
 }
 
