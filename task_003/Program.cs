@@ -1,7 +1,7 @@
 ﻿// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-const double min = -100.0;  // Set the MIN range of real (double) PRG-numbers
+const double min = -99.0;  // Set the MIN range of real (double) PRG-numbers
 const double max = 100.0;   // Set the MAX range of real (double) PRG-numbers
 const int roundTo = 4;      // Set number of fractional digits for better to read output
 
