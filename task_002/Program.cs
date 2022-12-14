@@ -2,7 +2,7 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-const int min = -100, max = 100; // Set MIN and MAX range for PRG-number
+const int min = -100, max = 100; // Set the MIN and MAX range for PRG-numbers
 
 void OutputTheResultOfCalculation(int[] numbersArray, int sum)
 {
@@ -16,6 +16,7 @@ void OutputTheResultOfCalculation(int[] numbersArray, int sum)
 
 int CalculateSumOfAllNumbersInOddIndices(int[] numbers)
 {
+
     int sum = 0;
 
     for (int i = 1; i < numbers.Length; i += 2)
@@ -99,4 +100,3 @@ int numOfElements = GetNumberOfElementsInArray("Введите количест�
 int[] numbersArray = BuildArrayOfPRGNs(numOfElements);
 int sum = CalculateSumOfAllNumbersInOddIndices(numbersArray);
 OutputTheResultOfCalculation(numbersArray, sum);
-
